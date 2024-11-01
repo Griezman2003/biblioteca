@@ -12,12 +12,3 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'biblioteca';
 }
-
-@Component({
-  selector: 'app-header',
-  standalone: true,
-  template: `<h1>Header Component</h1>`
-})
-export class HeaderComponent{
-  title= 'header';
-}
