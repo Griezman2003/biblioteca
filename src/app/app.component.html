@@ -3,16 +3,27 @@
   <div class="row">
     <div class="col-6">
       <nav style="display: flex; justify-content: center; align-items: center;">
-        <ul class="list-unstyled fs-5 m-0" style="gap:25px; cursor: pointer; display:flex;">
-          <li class="me-5 fw-normal" style="color: #351819;">Biblioteca</li>
-          <li>Inicio</li>
-          <li>About</li>
-          <li>Lista</li>
+        <ul class="list-unstyled fs-5 m-0" style="gap:20px; cursor: pointer; display:flex;">
+          <li class="me-5" style="color: #351819;">Start Bootstrap</li>
+          <li><button class="btn btn-dark">Inicio</button></li>
+          <li><button class="btn btn-dark">About</button></li>
+          <li class="dropdown">
+            <a class="btn btn-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lista
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">All Books</a></li>
+              <li><a class="dropdown-item" href="#">Books Pupular</a></li>
+              <li><a class="dropdown-item" href="#">News Books</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="col-6" style="display: flex; justify-content: end; align-items: center; cursor: pointer;">
-      <div class="rounded me-5" >Cart 0</div>
+      <div class="me-5 py-1 px-3" style="display: flex; justify-content: end; align-items: center; gap: 6px; border: 1.5px solid #000; border-radius: 10px;" >Cart 
+        <div class="text-white px-2 " style="background-color: #000; border-radius: 99999px;">0</div>
+      </div>
     </div>
   </div>
 </div>
