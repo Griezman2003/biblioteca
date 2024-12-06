@@ -1,0 +1,151 @@
+{
+    "libros": [
+      {
+        "titulo": "Cien años de soledad",
+        "imagen": "https://example.com/cien-anos-de-soledad.jpg",
+        "resena": "Una obra maestra de Gabriel García Márquez que narra la historia épica de la familia Buendía en el pueblo ficticio de Macondo."
+      },
+      {
+        "titulo": "1984",
+        "imagen": "https://example.com/1984.jpg",
+        "resena": "George Orwell describe un futuro distópico donde un régimen totalitario controla cada aspecto de la vida."
+      },
+      {
+        "titulo": "El Principito",
+        "imagen": "https://example.com/el-principito.jpg",
+        "resena": "Un cuento poético de Antoine de Saint-Exupéry sobre un joven príncipe que explora el universo buscando el sentido de la vida."
+      },
+      {
+        "titulo": "Orgullo y prejuicio",
+        "imagen": "https://example.com/orgullo-y-prejuicio.jpg",
+        "resena": "Una novela romántica de Jane Austen que explora las complejidades del amor y las relaciones sociales en la Inglaterra del siglo XIX."
+      },
+      {
+        "titulo": "Harry Potter y la piedra filosofal",
+        "imagen": "https://example.com/harry-potter-1.jpg",
+        "resena": "El primer libro de la famosa saga de J.K. Rowling donde conocemos a Harry, un joven mago, y su mundo mágico."
+      },
+      {
+        "titulo": "El señor de los anillos: La comunidad del anillo",
+        "imagen": "https://example.com/senor-de-los-anillos-1.jpg",
+        "resena": "La épica aventura de J.R.R. Tolkien donde un grupo de héroes busca destruir un anillo maldito."
+      },
+      {
+        "titulo": "Don Quijote de la Mancha",
+        "imagen": "https://example.com/don-quijote.jpg",
+        "resena": "La obra maestra de Miguel de Cervantes que sigue las desventuras de un caballero idealista y su fiel escudero, Sancho Panza."
+      },
+      {
+        "titulo": "Los juegos del hambre",
+        "imagen": "https://example.com/juegos-del-hambre.jpg",
+        "resena": "Suzanne Collins narra una distopía donde adolescentes luchan por sobrevivir en un brutal espectáculo televisado."
+      },
+      {
+        "titulo": "El código Da Vinci",
+        "imagen": "https://example.com/codigo-da-vinci.jpg",
+        "resena": "Dan Brown presenta un thriller lleno de enigmas y misterios relacionados con el arte y la religión."
+      },
+      {
+        "titulo": "Crónica de una muerte anunciada",
+        "imagen": "https://example.com/cronica-muerte-anunciada.jpg",
+        "resena": "Otra joya de Gabriel García Márquez que relata un asesinato anunciado y sus implicaciones sociales."
+      },
+      {
+        "titulo": "El alquimista",
+        "imagen": "https://example.com/el-alquimista.jpg",
+        "resena": "Paulo Coelho nos invita a seguir nuestros sueños a través de la historia de Santiago, un pastor que busca su leyenda personal."
+      },
+      {
+        "titulo": "Matar a un ruiseñor",
+        "imagen": "https://example.com/matar-a-un-ruisenor.jpg",
+        "resena": "Harper Lee aborda la injusticia racial y la pérdida de la inocencia en el sur de los Estados Unidos."
+      },
+      {
+        "titulo": "La sombra del viento",
+        "imagen": "https://example.com/sombra-del-viento.jpg",
+        "resena": "Carlos Ruiz Zafón nos lleva a una Barcelona gótica donde los secretos y libros se entrelazan en una historia inolvidable."
+      },
+      {
+        "titulo": "La casa de los espíritus",
+        "imagen": "https://example.com/casa-de-los-espiritus.jpg",
+        "resena": "Isabel Allende cuenta la historia de varias generaciones de una familia marcada por eventos sobrenaturales y conflictos políticos."
+      },
+      {
+        "titulo": "It",
+        "imagen": "https://example.com/it.jpg",
+        "resena": "Stephen King nos aterroriza con la historia de un grupo de niños que enfrentan a un mal ancestral en forma de payaso."
+      },
+      {
+        "titulo": "El gran Gatsby",
+        "imagen": "https://example.com/el-gran-gatsby.jpg",
+        "resena": "F. Scott Fitzgerald retrata la decadencia y los excesos de la sociedad americana en los años 20 a través de la figura de Jay Gatsby."
+      },
+      {
+        "titulo": "Los pilares de la tierra",
+        "imagen": "https://example.com/pilares-de-la-tierra.jpg",
+        "resena": "Ken Follett narra la construcción de una catedral en la Inglaterra medieval con un trasfondo de intrigas y conflictos."
+      },
+      {
+        "titulo": "La chica del tren",
+        "imagen": "https://example.com/chica-del-tren.jpg",
+        "resena": "Paula Hawkins nos sumerge en un thriller psicológico lleno de giros inesperados y secretos oscuros."
+      },
+      {
+        "titulo": "El cuento de la criada",
+        "imagen": "https://example.com/cuento-de-la-criada.jpg",
+        "resena": "Margaret Atwood imagina un futuro donde las mujeres son sometidas a un régimen totalitario que controla sus vidas."
+      },
+      {
+        "titulo": "Memorias de una geisha",
+        "imagen": "https://example.com/memorias-de-una-geisha.jpg",
+        "resena": "Arthur Golden nos lleva al Japón tradicional a través de los ojos de una joven que se convierte en una legendaria geisha."
+      },
+      {
+        "titulo": "Las aventuras de Sherlock Holmes",
+        "imagen": "https://example.com/sherlock-holmes.jpg",
+        "resena": "Arthur Conan Doyle presenta una colección de casos intrigantes resueltos por el brillante detective Sherlock Holmes."
+      },
+      {
+        "titulo": "Frankenstein",
+        "imagen": "https://example.com/frankenstein.jpg",
+        "resena": "Mary Shelley narra la creación de un ser artificial y las consecuencias éticas y emocionales de desafiar las leyes de la naturaleza."
+      },
+      {
+        "titulo": "Anna Karenina",
+        "imagen": "https://example.com/anna-karenina.jpg",
+        "resena": "Lev Tolstói explora el amor, la infidelidad y la tragedia en la Rusia del siglo XIX."
+      },
+      {
+        "titulo": "El hombre en busca de sentido",
+        "imagen": "https://example.com/hombre-en-busca-de-sentido.jpg",
+        "resena": "Viktor Frankl reflexiona sobre su experiencia en los campos de concentración nazis y el poder de encontrar significado en la vida."
+      },
+      {
+        "titulo": "Drácula",
+        "imagen": "https://example.com/dracula.jpg",
+        "resena": "Bram Stoker nos introduce al icónico vampiro que ha aterrorizado e intrigado a generaciones."
+      },
+      {
+        "titulo": "La metamorfosis",
+        "imagen": "https://example.com/metamorfosis.jpg",
+        "resena": "Franz Kafka cuenta la surrealista historia de un hombre que despierta convertido en un insecto gigante."
+      },
+      {
+        "titulo": "Los miserables",
+        "imagen": "https://example.com/los-miserables.jpg",
+        "resena": "Victor Hugo narra una épica historia de redención y justicia en la Francia del siglo XIX."
+      },
+      {
+        "titulo": "El guardián entre el centeno",
+        "imagen": "https://example.com/guardian-entre-el-centeno.jpg",
+        "resena": "J.D. Salinger ofrece una mirada a la adolescencia y la alienación a través de su icónico personaje Holden Caulfield."
+      },
+      {
+        "titulo": "Persuasión",
+        "imagen": "https://example.com/persuasion.jpg",
+        "resena": "Jane Austen explora las segundas oportunidades en el amor a través de la historia de Anne Elliot."
+      }
+    ]
+}
+     
+  
