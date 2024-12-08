@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import {HeaderComponent} from './header/header.component';
 import {LibroComponent} from './libro/libro.component';
-import { AppComponent } from "./app.component";
+import {LibroDetalleComponent} from './libro-detalle/libro-detalle.component'
 
 export const routes: Routes = [
     { path: '',component: LibroComponent},
-    { path: '**', redirectTo: '' }
+    {path: 'libro-detalle/:titulo', component: LibroDetalleComponent},
+    { path: '**', redirectTo: '' },
 ];
 
