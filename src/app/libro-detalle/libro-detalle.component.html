@@ -1,10 +1,10 @@
 <div *ngIf="libro" class="container-md mt-5">
     <div class="row">
-        <div class="col-md-5">
-            <img [src]="libro.imagen" alt="" height="500px" width="400px">
+        <div class="col-md-4">
+            <img class="img-fluid" [src]="libro.imagen" alt="">
         </div>
-        <div class="col-md-7">
-            <h2 class="text-center">{{libro.titulo}}</h2>
+        <div class="col-md-8">
+            <h2 class="text-center mt-5">{{libro.titulo}}</h2>
             <p class="mt-5">{{libro.resena}}</p>
             <div>
                 <h5 class="mt-5">Autor</h5>
