@@ -15,137 +15,34 @@
     <!-- Contenedor de las targetas -->
     <div class="container-md my-5 text-center">
         <div class="row">
-            @if (libros.length > 0) {
-            <div class="col-md-3 targeta">
-                @for (libro of libros; track libro.titulo) {
-                <div class="card" style="width: 15rem;">
-                    <a>
-                        <img [src]="libro.imagen" [alt]="libro.titulo"  class="img-thumbnail">
-                    </a >
-                    <div class="card-body">
-                        <h5 class="card-title">{{libro.titulo}}</h5>
-                        <p class="card-text">{{libro.resena}}</p>
+            <div class="col-md-12">
+                @if (libros.length > 0) {
+                    <div class="row">
+                        @for (libro of libros; track libro.titulo) {
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <a>
+                                        <img [src]="libro.imagen" [alt]="libro.titulo" class="img-thumbnail" style="height: 350px; width: 500px;">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{libro.titulo}}</h5>
+                                        <p class="card-text">{{libro.resena}}</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item fw-bold">{{libro.titulo}}</li>
+                                        <li class="list-group-item">$40.00 - $80.00</li>
+                                        <li class="list-group-item">Ver libro</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        }
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">{{libro.titulo}}</li>
-                        <li class="list-group-item">$40.00 - $80.00</li>
-                        <li class="list-group-item">Ver libro</li>
-                    </ul>
-                </div> 
+                } @else {
+                    <div class="text-center">Cargando libros...</div>
                 }
-            </div>
-            }@else{
-                <div class="text-center">Cargando libros...</div>
-            }
-            <div class="col-md-3 targeta">
-                <div class="card" style="width: 15rem;">
-                    <img src="assets/images/angular.png" class="img-thumbnail" alt="Angular">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">El senor de los anillos</li>
-                        <li class="list-group-item">$40.00 - $80.00</li>
-                        <li class="list-group-item">Ver libro</li>
-                    </ul>
-                </div>  
-            </div>
-            
-            <div class="col-md-3 targeta">
-                <div class="card" style="width: 15rem;">
-                    <img src="assets/images/angular.png" class="img-thumbnail" alt="Angular">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">El senor de los anillos</li>
-                        <li class="list-group-item">$40.00 - $80.00</li>
-                        <li class="list-group-item">Ver libro</li>
-                    </ul>
-                </div>  
-            </div>
-            
-            <div class="col-md-3 targeta">
-                <div class="card" style="width: 15rem;">
-                    <img src="assets/images/angular.png" class="img-thumbnail" alt="Angular">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">El senor de los anillos</li>
-                        <li class="list-group-item">$40.00 - $80.00</li>
-                        <li class="list-group-item">Ver libro</li>
-                    </ul>
-                </div>  
             </div>
         </div>
         
-        <!-- Segunda fila de targetas -->
-        <div class="row mt-5">
-            <div class="col-md-3 targeta">
-                <div class="card" style="width: 15rem;">
-                    <img src="assets/images/angular.png" class="img-thumbnail" alt="Angular">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">El senor de los anillos</li>
-                        <li class="list-group-item">$40.00 - $80.00</li>
-                        <li class="list-group-item">Ver libro</li>
-                    </ul>
-                </div>  
-            </div>
-            
-            <div class="col-md-3 targeta">
-                <div class="card" style="width: 15rem;">
-                    <img src="assets/images/angular.png" class="img-thumbnail" alt="Angular">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">El senor de los anillos</li>
-                        <li class="list-group-item">$40.00 - $80.00</li>
-                        <li class="list-group-item">Ver libro</li>
-                    </ul>
-                </div>  
-            </div>
-            
-            <div class="col-md-3 targeta">
-                <div class="card" style="width: 15rem;">
-                    <img src="assets/images/angular.png" class="img-thumbnail" alt="Angular">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">El senor de los anillos</li>
-                        <li class="list-group-item">$40.00 - $80.00</li>
-                        <li class="list-group-item">Ver libro</li>
-                    </ul>
-                </div>  
-            </div>
-            
-            <div class="col-md-3 targeta">
-                <div class="card" style="width: 15rem;">
-                    <img src="assets/images/angular.png" class="img-thumbnail" alt="Angular">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">El senor de los anillos</li>
-                        <li class="list-group-item">$40.00 - $80.00</li>
-                        <li class="list-group-item">Ver libro</li>
-                    </ul>
-                </div>  
-            </div>
-        </div>
-        <!-- fin de la segunda fila de targetas -->
     </div>
     <!-- fin de las targetas -->
     
