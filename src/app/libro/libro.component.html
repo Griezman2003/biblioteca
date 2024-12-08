@@ -1,15 +1,15 @@
 <app-header></app-header>
 <body>
     <!-- contenido del main centro -->
-    <div class="container-fluid" style="background-color: #212529; height: 60vh; display: flex; align-items: center; justify-content: center;">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <div class="">
-                    <h1 class="text-white">Biblioteca Virtual</h1>
-                    <h3 style="color: #909294;">Universidad tecnologica de candelaria</h3>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluid mt-5" style="height: 70vh; display: flex; align-items: center; justify-content: center;"> 
+        <div class="row img-fluid" style="background-image: url('assets/images/biblioteca.jpg'); background-size: cover; background-position: center; width: 100%; height: 100%;
+        display: flex; align-items: center;"> 
+            <div class="col-md-12 text-center" style="background: rgba(0, 0, 0, 0.4); padding: 20px;"> 
+                <div> <h1 class="text-white">Biblioteca Virtual</h1> 
+                    <h2 class="text-white">Universidad tecnologica de candelaria</h2> 
+                </div> 
+            </div> 
+        </div> 
     </div>
     <!-- find -->
     <!-- Contenedor de las targetas -->
@@ -22,7 +22,7 @@
                             <div class="col-md-3 mb-4">
                                 <div class="card">
                                     <a>
-                                        <img [src]="libro.imagen" [alt]="libro.titulo" class="img-thumbnail" style="height: 350px; width: 500px;">
+                                        <img [src]="libro.imagen" [alt]="libro.titulo" class="img-thumbnail" style="height: 300px; width: 500px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">{{libro.titulo}}</h5>
