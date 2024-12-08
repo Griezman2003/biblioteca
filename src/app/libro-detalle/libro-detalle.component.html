@@ -1,17 +1,22 @@
-<div *ngIf="libro" class="container mt-5">
+<div *ngIf="libro" class="container-md mt-5">
     <div class="row">
-        <div class="col-md-6">
-            <img src="" class="img-fluid">
+        <div class="col-md-5">
+            <img [src]="libro.imagen" alt="" height="500px" width="400px">
         </div>
-        <div class="col-md-6">
-            <h1>{{libro.titulo}}</h1>
-            <p>resenna</p>
-            <div class="card">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Autor:</strong>hola</li>
-                    <li class="list-group-item"><strong>Precio:</strong> $40.00 - $80.00</li>
-                    <li class="list-group-item"><strong>Descripción completa:</strong>hola</li>
-                </ul>
+        <div class="col-md-7">
+            <h2 class="text-center">{{libro.titulo}}</h2>
+            <p class="mt-5">{{libro.resena}}</p>
+            <div>
+                <h5 class="mt-5">Autor</h5>
+                <p class="">{{libro.autor}}</p>
+            </div>
+            <div class="mt-5">
+                <h5>año de emision</h5>
+                <p>{{libro.ano}}</p>
+            </div>
+            <div class="mt-5">
+                <h5>Link de descarga:</h5>
+                <a href="">Link para descargar : <span>{{libro.titulo}}</span></a>
             </div>
         </div>
     </div>
