@@ -5,11 +5,10 @@ import { JsonService } from '../service/json.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-libro',
-  standalone: true,
-  imports: [HeaderComponent, CommonModule],
-  templateUrl: './libro.component.html',
-  styleUrl: './libro.component.css'
+    selector: 'app-libro',
+    imports: [HeaderComponent, CommonModule],
+    templateUrl: './libro.component.html',
+    styleUrl: './libro.component.css'
 })
 export class LibroComponent  implements OnInit {
   title = 'Libro';
