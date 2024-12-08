@@ -122,140 +122,140 @@
     {
       "titulo": "Ulises",
       "autor": "James Joyce",
-      "imagen": "https://m.media-amazon.com/images/I/71gVMRIbfSL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/71yxeP1BtBL._AC_UF1000,1000_QL80_.jpg",
       "resena": "Una obra revolucionaria que narra un día en la vida de Leopold Bloom, utilizando técnicas narrativas innovadoras como el monólogo interior. Explora temas como la identidad, el amor y la vida moderna.",
       "ano": 1922
     },
     {
       "titulo": "Las mil y una noches",
       "autor": "Anónimo",
-      "imagen": "https://m.media-amazon.com/images/I/71ImP9Aw+JL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/81Sy3D+XbrL._UF894,1000_QL80_.jpg",
       "resena": "Una colección de cuentos tradicionales del Medio Oriente que entrelazan historias mágicas, de amor y aventuras contadas por Scheherezade para salvar su vida.",
       "ano": 1704
     },
     {
       "titulo": "En busca del tiempo perdido",     
       "autor": "Marcel Proust",
-      "imagen": "https://m.media-amazon.com/images/I/71ZB7PQJ1jL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/71ivo8QucTL._AC_UF1000,1000_QL80_.jpg",
       "resena": "Una introspectiva serie de novelas que exploran la memoria, el arte y la sociedad a través de la mirada detallada del narrador sobre su vida y sus relaciones.",
       "ano": 1913
     },
     {
       "titulo": "El nombre de la rosa",
       "autor": "Umberto Eco",
-      "imagen": "https://m.media-amazon.com/images/I/71QCQ42YQfL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/71lM9yNEepL._AC_UF894,1000_QL80_.jpg",
       "resena": "Un thriller histórico ambientado en un monasterio medieval donde un monje y su aprendiz investigan una serie de asesinatos misteriosos.",
       "ano": 1980
     },
     {
       "titulo": "Frankenstein",
       "autor": "Mary Shelley",
-      "imagen": "https://m.media-amazon.com/images/I/71It5-QJknL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/61oPJXXqXGL._AC_UF1000,1000_QL80_.jpg",
       "resena": "La historia de un científico que crea un ser vivo a partir de partes humanas, explorando los límites de la ciencia, la ética y el impacto de la soledad.",
       "ano": 1818
     },
     {
       "titulo": "Drácula",
       "autor": "Bram Stoker",
-      "imagen": "https://m.media-amazon.com/images/I/71NVaIL4SfL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/617OArwKDAL._AC_UF1000,1000_QL80_.jpg",
       "resena": "La historia del conde Drácula y su intento de mudarse a Inglaterra, enfrentando a un grupo de personajes que intentan detenerlo. Un clásico del terror gótico.",
       "ano": 1897
     },
     {
       "titulo": "La metamorfosis",
       "autor": "Franz Kafka",
-      "imagen": "https://m.media-amazon.com/images/I/71WECFOQZ8L._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/612NA7i9u8L._AC_UF1000,1000_QL80_.jpg",
       "resena": "El impactante relato de Gregor Samsa, quien se despierta convertido en un insecto gigante, explorando temas como la alienación, el rechazo y la identidad.",
       "ano": 1915
     },
     {
       "titulo": "Cumbres borrascosas",
       "autor": "Emily Brontë",
-      "imagen": "https://m.media-amazon.com/images/I/71BSKm7P7kL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/81G3b+sNSjL._AC_UF894,1000_QL80_.jpg",
       "resena": "Una historia de amor trágica y obsesiva entre Catherine y Heathcliff, situada en los páramos ingleses y marcada por la pasión y la venganza.",
       "ano": 1847
     },
     {
       "titulo": "A sangre fría",
       "autor": "Truman Capote",
-      "imagen": "https://m.media-amazon.com/images/I/71b6d2GnOpL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/71bgGnuTKLL._AC_UF894,1000_QL80_.jpg",
       "resena": "Una novela de no ficción que narra el brutal asesinato de una familia en Kansas y las vidas de los culpables, ofreciendo una mirada fascinante a la mente criminal.",
       "ano": 1966
     },
     {
       "titulo": "El corazón de las tinieblas",
       "autor": "Joseph Conrad",
-      "imagen": "https://m.media-amazon.com/images/I/71FsEnSOvPL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/61ZSm54sscL._AC_UF1000,1000_QL80_.jpg",
       "resena": "La travesía de Marlow hacia el corazón de África para encontrar a un misterioso comerciante llamado Kurtz, explorando la oscuridad inherente al alma humana.",
       "ano": 1899
     },
     {
       "titulo": "Madame Bovary",
       "autor": "Gustave Flaubert",
-      "imagen": "https://m.media-amazon.com/images/I/71IwUN7oTTL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/516vAsK3kXL._AC_UF1000,1000_QL80_.jpg",
       "resena": "Una novela que relata la insatisfacción de Emma Bovary con su vida cotidiana y su búsqueda de emoción a través de romances ilícitos y el lujo.",
       "ano": 1857
     },
     {
       "titulo": "El guardián entre el centeno",
       "autor": "J.D. Salinger",
-      "imagen": "https://m.media-amazon.com/images/I/81NSxj4wJ5L._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/61fwcnFmmpL._AC_UF1000,1000_QL80_.jpg",
       "resena": "La historia de Holden Caulfield, un adolescente rebelde que narra su visión desencantada de la sociedad y su búsqueda de autenticidad.",  
       "ano": 1951
     },
     {
       "titulo": "Moby-Dick",
       "autor": "Herman Melville",
-      "imagen": "https://m.media-amazon.com/images/I/71vBgUPwNGL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/71d5wo+-MuL._AC_UF1000,1000_QL80_.jpg",
       "resena": "Una épica sobre la obsesión del capitán Ahab por vengarse de una ballena blanca, simbolizando la lucha entre el hombre y la naturaleza.",
       "ano": 1851
     },
     {
       "titulo": "La divina comedia",
       "autor": "Dante Alighieri",
-      "imagen": "https://m.media-amazon.com/images/I/71V48YhrHJL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/71WJbXGxPdL._AC_UF1000,1000_QL80_.jpg",
       "resena": "Un poema épico que narra el viaje de Dante a través del Infierno, el Purgatorio y el Paraíso, explorando temas de fe, redención y amor divino.",
       "ano": 1320
     },
     {
       "titulo": "El retrato de Dorian Gray",
       "autor": "Oscar Wilde",  
-      "imagen": "https://m.media-amazon.com/images/I/71DJHZ7ALjL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/71N1th8b5vL._AC_UF1000,1000_QL80_.jpg",
       "resena": "La historia de un hombre cuya belleza permanece inalterada mientras su retrato envejece y refleja los efectos de su vida hedonista.",
       "ano": 1890
     },
     {
       "titulo": "Los hermanos Karamázov",
       "autor": "Fiódor Dostoyevski",
-      "imagen": "https://m.media-amazon.com/images/I/71J2pS7q24L._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/71GxEy5PKbL._UF1000,1000_QL80_.jpg",
       "resena": "Una profunda exploración de la moralidad, la religión y las relaciones familiares a través de la vida de los hermanos Karamázov.",
       "ano": 1880
     },
     {
       "titulo": "El extranjero",
       "autor": "Albert Camus",
-      "imagen": "https://m.media-amazon.com/images/I/71wnQixYXvL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/61RLAWzw+rL._AC_UF894,1000_QL80_.jpg",
       "resena": "La historia de Meursault, un hombre apático que comete un asesinato y enfrenta el absurdo de la vida durante su juicio.",
       "ano": 1942
     },
     {
       "titulo": "Rayuela",
       "autor": "Julio Cortázar",
-      "imagen": "https://m.media-amazon.com/images/I/71N6aJDd0TL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/61Hje5q9CRL._AC_UF1000,1000_QL80_.jpg",
       "resena": "Una novela innovadora que invita al lector a saltar entre capítulos para descubrir múltiples perspectivas de una historia sobre amor y autodescubrimiento.",
       "ano": 1963
     },
     {
       "titulo": "Cien poemas de amor y una canción desesperada",
       "autor": "Pablo Neruda",
-      "imagen": "https://m.media-amazon.com/images/I/71LfAIfHXJL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/81bU4PJrsKL._AC_UF1000,1000_QL80_.jpg",
       "resena": "Una colección de poemas que celebra el amor y la pasión, combinando imágenes sensuales con emociones intensas.",
       "ano": 1924
     },
     {
       "titulo": "La historia interminable",
       "autor": "Michael Ende",
-      "imagen": "https://m.media-amazon.com/images/I/81rbZQdXZGL._AC_UF1000,1000_QL80_.jpg",
+      "imagen": "https://m.media-amazon.com/images/I/81AnDoYIymL._UF894,1000_QL80_.jpg",
       "resena": "La aventura de Bastián en el mundo de Fantasía, donde debe salvar al reino de la Nada y descubrir su propio valor.",
       "ano": 1979
     }
