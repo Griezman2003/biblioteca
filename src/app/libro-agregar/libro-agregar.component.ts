@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { LibroAgregarService } from '../service/libro-agregar.service';
 import { FormsModule } from '@angular/forms';
-<<<<<<< HEAD
 import { NgIf } from '@angular/common';
 import { response } from 'express';
-=======
->>>>>>> refs/remotes/origin/main
 
 @Component({
   selector: 'app-libro-agregar',
@@ -51,10 +48,6 @@ export class LibroAgregarComponent {
         console.error('Error al subir el libro', error);
         this.mensaje = 'Error al subir el libro';
       }
-<<<<<<< HEAD
     });
-=======
-    );
->>>>>>> refs/remotes/origin/main
   }
 }
