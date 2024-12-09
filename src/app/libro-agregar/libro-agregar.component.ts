@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { LibroAgregarService } from '../service/libro-agregar.service';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+=======
+import { HttpClient } from '@angular/common/http';
+>>>>>>> refs/remotes/origin/main
 
 @Component({
   selector: 'app-libro-agregar',
@@ -10,6 +14,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './libro-agregar.component.css'
 })
 export class LibroAgregarComponent {
+<<<<<<< HEAD
   titulo: string = '';
   autor: string = '';
   pdfFile: File | null = null;
@@ -48,5 +53,17 @@ export class LibroAgregarComponent {
         console.error('Error al subir el libro', error);
       }
     );
+=======
+  libro = { titulo: '', autor: '', genero: '', anio_publicacion: null };
+
+  constructor(private http: HttpClient) {}
+
+  agregarLibro() {
+    this.http.post('http://localhost:3000/libros', this.libro)
+      .subscribe(() => {
+        alert('Libro agregado correctamente');
+        this.libro = { titulo: '', autor: '', genero: '', anio_publicacion: null };
+      });
+>>>>>>> refs/remotes/origin/main
   }
 }
