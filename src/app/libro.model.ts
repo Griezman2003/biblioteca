@@ -1,7 +1,7 @@
 export interface Libro {
+    id: number;
     titulo: string;
-    imagen: string;
-    resena: string;
     autor: string;
-    ano: string;
-}
+    archivo_pdf: string;
+    imagen_url: string;
+  }

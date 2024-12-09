@@ -1,0 +1,21 @@
+<div>
+  <h2>Agregar Libro</h2>
+  <form (ngSubmit)="agregarLibro()">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" [(ngModel)]="titulo" name="titulo" required>
+
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" [(ngModel)]="autor" name="autor" required>
+
+    <label for="archivo_pdf">Archivo PDF:</label>
+    <input type="file" id="archivo_pdf" (change)="onFileChange($event)" required>
+
+    <label for="imagen">Imagen:</label>
+    <input type="file" id="imagen" (change)="onImageChange($event)" required>
+
+    <button type="submit">Subir Libro</button>
+  </form>
+  <div *ngIf="mensaje">{{ mensaje }}</div>
+</div>
+
+  

@@ -70,8 +70,8 @@ body {
     font-weight: 500;
   }
   .dropdown-item:hover {
-    background-color: #fdf3e3;
-    color: #351819;
+    background-color: #000;
+    color: #000;
   }
   .logo {
     max-height: 80px;
