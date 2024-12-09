@@ -1,31 +1,21 @@
-<<<<<<< HEAD
-<div *ngIf="libro" class="container-md">
-    <div class="row py-4">
-        <div style="display: flex; justify-content: end;">
-            <a class="text-decoration-none" href="/">Volver</a>
-        </div>
-    </div>
-    <div class="row mt-3">
-=======
 <div *ngIf="libro" class="container-md mt-5">
     <div class="row">
         <a class="text-decoration-none" style="display: flex; justify-content: end;" href="/">Volver</a>
     </div>
     <div class="row mt-5">
->>>>>>> refs/remotes/origin/main
         <div class="col-md-4">
-            <img class="img-fluid" [src]="libro.imagen" alt="">
+            <img class="img-fluid" [src]="libro.titulo" alt="">
         </div>
         <div class="col-md-8">
             <h2 class="text-center mt-6">{{libro.titulo}}</h2>
-            <p class="mt-5">{{libro.resena}}</p>
+            <p class="mt-5">{{libro.titulo}}</p>
             <div>
                 <h5 class="mt-5">Autor</h5>
                 <p class="">{{libro.autor}}</p>
             </div>
             <div class="mt-5">
                 <h5>año de emision</h5>
-                <p>{{libro.ano}}</p>
+                <p>{{libro.titulo}}</p>
             </div>
             <div class="mt-5">
                 <h5>Link de descarga</h5>

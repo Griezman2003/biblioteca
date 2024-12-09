@@ -8,7 +8,7 @@ import { Libro } from "../libro.model";
 })
 export class JsonService {
 
-  private apiUrl = 'http://localhost:3000/subir-libro';
+  private apiUrl = 'http://localhost:3000/libros';
 
   constructor(private http: HttpClient) { }
 

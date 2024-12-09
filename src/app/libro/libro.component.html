@@ -25,11 +25,11 @@
                             <div class="col-md-3 mb-4">
                                 <div class="card">
                                     <a [routerLink]="['/libro-detalle', libro.titulo]">
-                                        <img [src]="libro.titulo" [alt]="libro.titulo" class="img-thumbnail" style="height: 370px; width: 500px;">
+                                        <img [src]="libro.imagen_url" [alt]="libro.titulo" class="img-thumbnail" style="height: 370px; width: 500px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">{{libro.titulo}}</h5>
-                                        <p class="card-text">{{libro.titulo}}</p>
+                                        <p class="card-text">{{libro.autor}}</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item fw-bold">{{libro.titulo}}</li>

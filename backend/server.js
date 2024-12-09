@@ -48,14 +48,11 @@ app.post('/subir-libro', upload.fields([{ name: 'archivo_pdf' }, { name: 'imagen
   }
   const archivo_pdf = '/uploads/' + req.files['archivo_pdf'][0].filename;  
   const imagen_url = '/uploads/' + req.files['imagen'][0].filename;
-
-
   const query = 'INSERT INTO libros (titulo, autor, archivo_pdf, imagen_url) VALUES (?, ?, ?, ?)';
   db.query(query, [titulo, autor, archivo_pdf, imagen_url], (err, result) => {
     if (err) {
       return res.status(500).json({ message: 'Error al guardar en la base de datos', error: err });
     }
-
     const response = {
       message: 'Libro guardado correctamente',
       libro: { id: result.insertId, titulo, autor, archivo_pdf, imagen_url }
@@ -65,6 +62,14 @@ app.post('/subir-libro', upload.fields([{ name: 'archivo_pdf' }, { name: 'imagen
     res.status(200).json(response);
   });
 });
+
+app.get('/libros', (req, res) => {
+   const query = 'SELECT * FROM libros'; db.query(query, (err, results) => { 
+    if (err) { return res.status(500).json({ message: 'Error al obtener libros', error: err }); }
+      res.status(200).json({ libros: results 
+     }); 
+    }); 
+  });
 
 app.use('/uploads', express.static('uploads'));
 
