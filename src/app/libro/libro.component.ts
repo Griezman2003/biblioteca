@@ -1,35 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
-import { Libro } from '../libro.model';
-import { JsonService } from '../service/json.service';
-import {LibroDetalleService} from '../service/libro-detalle.service';
-import { CommonModule } from '@angular/common';
-import { RouterLink, Router } from '@angular/router';
+import { Libro } from '../libro.model';  // Asegúrate de importar el modelo
+import { JsonService } from '../service/json.service';  // Asegúrate de importar el servicio
+import { RouterLink } from '@angular/router';
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
-    selector: 'app-libro',
-    imports: [HeaderComponent, CommonModule, RouterLink],
-    templateUrl: './libro.component.html',
-    styleUrl: './libro.component.css'
+  selector: 'app-libro',
+  imports: [RouterLink, HeaderComponent],
+  templateUrl: './libro.component.html',
+  styleUrls: ['./libro.component.css']
 })
-export class LibroComponent  implements OnInit {
+export class LibroComponent implements OnInit {
   title = 'Libro';
   libros: Libro[] = [];
-  
-  constructor(private jsonService: JsonService, private libroDetalle: LibroDetalleService, 
-    private router: Router) {}
-  
+
+  constructor(private jsonService: JsonService) {}
+
   ngOnInit(): void {
     this.jsonService.getLibros().subscribe({
       next: (data) => {
-        this.libros = data.libros;  
+        this.libros = data.libros;
       },
-      error: (error) => { 
+      error: (error) => {
         console.error('Error al cargar libros', error);
       }
     });
-  }
-  verDetalles(libro: Libro): void { 
-    this.router.navigate(['/libro-detalle', libro.titulo]); 
   }
 }
