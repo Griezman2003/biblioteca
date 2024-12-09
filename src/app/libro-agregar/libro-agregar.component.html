@@ -1,45 +1,21 @@
-<<<<<<< HEAD
-<div class="container">
-    <h2>Agregar Libro</h2>
-    <form (ngSubmit)="agregarLibro()">
-      <div>
-        <label for="titulo">Título</label>
-        <input type="text" id="titulo" [(ngModel)]="titulo" name="titulo" required>
-      </div>
-      
-      <div>
-        <label for="autor">Autor</label>
-        <input type="text" id="autor" [(ngModel)]="autor" name="autor" required>
-      </div>
-      
-      <div>
-        <label for="pdf">Archivo PDF</label>
-        <input type="file" id="pdf" (change)="onFileChange($event)" required>
-      </div>
-  
-      <div>
-        <label for="imagen">Imagen (Portada)</label>
-        <input type="file" id="imagen" (change)="onImageChange($event)" required>
-      </div>
-      
-      <button type="submit">Guardar</button>
-    </form>
-  </div>
-=======
-<form >
+<div>
+  <h2>Agregar Libro</h2>
+  <form (ngSubmit)="agregarLibro()">
     <label for="titulo">Título:</label>
-    <input id="titulo"  name="titulo" required />
-  
+    <input type="text" id="titulo" [(ngModel)]="titulo" name="titulo" required>
+
     <label for="autor">Autor:</label>
-    <input id="autor"  name="autor" required />
-  
-    <label for="genero">Género:</label>
-    <input id="genero"  name="genero" />
-  
-    <label for="anio">Año de Publicación:</label>
-    <input id="anio" type="number"  name="anio" />
-  
-    <button type="submit">Agregar Libro</button>
+    <input type="text" id="autor" [(ngModel)]="autor" name="autor" required>
+
+    <label for="archivo_pdf">Archivo PDF:</label>
+    <input type="file" id="archivo_pdf" (change)="onFileChange($event)" required>
+
+    <label for="imagen">Imagen:</label>
+    <input type="file" id="imagen" (change)="onImageChange($event)" required>
+
+    <button type="submit">Subir Libro</button>
   </form>
->>>>>>> refs/remotes/origin/main
+  <div *ngIf="mensaje">{{ mensaje }}</div>
+</div>
+
   

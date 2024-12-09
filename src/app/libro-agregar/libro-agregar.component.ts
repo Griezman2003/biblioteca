@@ -1,69 +1,53 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { LibroAgregarService } from '../service/libro-agregar.service';
-import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-=======
-import { HttpClient } from '@angular/common/http';
->>>>>>> refs/remotes/origin/main
+import { NgIf } from '@angular/common';
+import { response } from 'express';
 
 @Component({
   selector: 'app-libro-agregar',
-  imports: [FormsModule],
+  imports: [FormsModule, NgIf],
   templateUrl: './libro-agregar.component.html',
-  styleUrl: './libro-agregar.component.css'
+  styleUrls: ['./libro-agregar.component.css']
 })
 export class LibroAgregarComponent {
-<<<<<<< HEAD
   titulo: string = '';
   autor: string = '';
   pdfFile: File | null = null;
   imagenFile: File | null = null;
+  mensaje: string = ''; 
 
-  constructor(private libroService: LibroAgregarService) {} 
-
+  constructor(private libroService: LibroAgregarService) {}
 
   onFileChange(event: any): void {
-    this.pdfFile = event.target.files[0];  
+    this.pdfFile = event.target.files[0];
   }
 
-
   onImageChange(event: any): void {
-    this.imagenFile = event.target.files[0];  
+    this.imagenFile = event.target.files[0];
   }
 
   agregarLibro(): void {
+    if (!this.titulo || !this.autor || !this.pdfFile || !this.imagenFile) {
+      console.error('Por favor, complete todos los campos');
+      this.mensaje = 'Por favor, complete todos los campos';
+      return;
+    }
     const formData = new FormData();
-    
     formData.append('titulo', this.titulo);
     formData.append('autor', this.autor);
+    formData.append('archivo_pdf', this.pdfFile!, this.pdfFile!.name);
+    formData.append('imagen', this.imagenFile!, this.imagenFile!.name);
 
-    if (this.pdfFile) {
-      formData.append('archivo_pdf', this.pdfFile, this.pdfFile.name);
-    }
-    if (this.imagenFile) {
-      formData.append('imagen', this.imagenFile, this.imagenFile.name);
-    }
-
-    this.libroService.agregarLibro(formData).subscribe(
-      response => {
+    this.libroService.agregarLibro(formData).subscribe({
+      next: (response) => {
         console.log('Libro subido con éxito', response);
+        this.mensaje = 'Libro subido con éxito';
       },
-      error => {
+      error: (error) => {
         console.error('Error al subir el libro', error);
+        this.mensaje = 'Error al subir el libro';
       }
-    );
-=======
-  libro = { titulo: '', autor: '', genero: '', anio_publicacion: null };
-
-  constructor(private http: HttpClient) {}
-
-  agregarLibro() {
-    this.http.post('http://localhost:3000/libros', this.libro)
-      .subscribe(() => {
-        alert('Libro agregado correctamente');
-        this.libro = { titulo: '', autor: '', genero: '', anio_publicacion: null };
-      });
->>>>>>> refs/remotes/origin/main
+    });
   }
 }
