@@ -19,16 +19,16 @@ export class LibroComponent  implements OnInit {
   constructor(private jsonService: JsonService, private libroDetalle: LibroDetalleService, 
     private router: Router) {}
   
-  ngOnInit(): void {
-    this.jsonService.getLibros().subscribe({
-      next: (data) => {
-        this.libros = data.libros;  
-      },
-      error: (error) => { 
-        console.error('Error al cargar libros', error);
-      }
-    });
-  }
+    ngOnInit(): void {
+      this.jsonService.getLibros().subscribe({
+        next: (data) => {
+          this.libros = data.libros;
+        },
+        error: (error) => { 
+          console.error('Error al cargar libros', error);
+        }
+      });
+    }
   verDetalles(libro: Libro): void { 
     this.router.navigate(['/libro-detalle', libro.titulo]); 
   }
