@@ -14,9 +14,8 @@
       "purpose": "maskable any"
     },
     {
-      "src": "icons/favicon-32x32.png",
-      "sizes": "96x96",
-      "type": "image/png",
+      "src": "assets/images/biblioteca.jpg",
+      "type": "image/jpg",
       "purpose": "maskable any"
     },
     {
