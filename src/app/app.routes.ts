@@ -5,7 +5,7 @@ import { LibroAgregarComponent } from "./libro-agregar/libro-agregar.component";
 
 export const routes: Routes = [
     { path: '',component: LibroComponent},
-    {path: 'libro-detalle', component: LibroDetalleComponent},
+    {path: 'acercade', component: LibroDetalleComponent},
     {path: 'libro-agregar', component: LibroAgregarComponent},
     { path: '**', redirectTo: '' },
 ];
