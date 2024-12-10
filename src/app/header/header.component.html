@@ -21,14 +21,14 @@
 <div class="container-fluid py-2" style="background-color: #0A6437;">
   <nav class="d-flex justify-content-center">
     <ul class="list-unstyled d-flex text-white m-0" style="gap: 30px;">
-      <li><button class="btn btn-outline-light px-4 py-2">Inicio</button></li>
+      <li><button class="btn btn-outline-light px-4 py-2" [routerLink]="['/']">Inicio</button></li>
       <li><button class="btn btn-outline-light px-4 py-2" [routerLink]="['/acercade']">Acerca de</button></li>
       <li class="dropdown">
         <a class="btn btn-outline-light px-4 py-2 dropdown-toggle" href="#" data-bs-toggle="dropdown">Lista</a>
         <ul class="dropdown-menu dropdown-menu-dark">
           <li><a class="dropdown-item text-white" [routerLink]="['/libro-agregar']">Agregar Libro</a></li>
-          <li><a class="dropdown-item text-white" href="#">Libros Populares</a></li>
-          <li><a class="dropdown-item text-white" href="#">Nuevos Libros</a></li>
+          <!-- <li><a class="dropdown-item text-white" href="#">Libros Populares</a></li>
+          <li><a class="dropdown-item text-white" href="#">Nuevos Libros</a></li> -->
         </ul>
       </li>
     </ul>
