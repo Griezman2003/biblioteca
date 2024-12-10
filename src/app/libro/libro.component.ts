@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Libro } from '../libro.model';  // Asegúrate de importar el modelo
-import { JsonService } from '../service/json.service';  // Asegúrate de importar el servicio
+import { Libro } from '../libro.model'; 
+import { JsonService } from '../service/json.service'; 
 import { RouterLink } from '@angular/router';
 import { HeaderComponent } from "../header/header.component";
 
@@ -25,5 +25,11 @@ export class LibroComponent implements OnInit {
         console.error('Error al cargar libros', error);
       }
     });
+  }
+  imagenDefecto(event: Event): void { 
+    (event.target as HTMLImageElement).src = 'assets/images/angular.png'; 
+  }
+  trackByFn(index: number, libro: any): number {
+    return libro.id; 
   }
 }
