@@ -78,3 +78,49 @@ body {
     background-color: #212529;
     padding: 20px 0;
 }
+
+/* targeta de libros */
+.book-card {
+    position: relative;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.book-body {
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.book-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.book-author {
+    margin: 10px 0;
+}
+
+.book-list {
+    background-color: #f8f9fa;
+}
+hr.my-2 { 
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem; 
+    border: 0; 
+    border-top: 1px solid #000; }
+

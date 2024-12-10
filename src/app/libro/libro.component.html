@@ -19,34 +19,37 @@
     <div class="container-md my-5 text-center">
         <div class="row">
             <div class="col-md-12">
-                @if (libros.length > 0) {
+                <ng-container *ngIf="libros.length > 0; else noData">
                     <div class="row">
-                        @for (libro of libros; track libro.titulo) {
+                        <ng-container *ngFor="let libro of libros; trackBy: trackByFn">
                             <div class="col-md-3 mb-4">
-                                <div class="card">
+                                <div class="book-card">
                                     <a>
-                                        <img [src]="'http://localhost:3000' + libro.imagen_url" [alt]="libro.titulo" class="img-thumbnail" style="height: 340px;"
+                                        <img [src]="'http://localhost:3000' + libro.imagen_url" [alt]="libro.titulo" class="book-img" 
                                         (error)="imagenDefecto($event)">
                                     </a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">{{libro.titulo}}</h5>
-                                        <!-- <p class="card-text">{{libro.autor}}</p> -->
+                                    <div class="book-body">
+                                        <h5 class="book-title">{{ libro.titulo }}</h5>
+                                        <hr class="my-2">
+                                        <p class="book-author fw-bold text-black">Autor: {{ libro.autor }}</p>
+                                        <hr class="my-2">
+                                        <p>
+                                            <a class="text-decoration-none" [href]="'http://localhost:3000' + libro.archivo_pdf" target="_blank">Leer Libro</a>
+                                        </p>
                                     </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item fw-bold">Autor: {{libro.autor}}</li>
-                                        <!-- <li class="list-group-item">{{libro.autor}}</li> -->
-                                        <li class="list-group-item"><a class="text-decoration-none" [href]="'http://localhost:3000' + libro.archivo_pdf" target="_blank">Leer Libro</a></li>
-                                    </ul>
                                 </div>
                             </div>
-                        }
+                        </ng-container>
                     </div>
-                } @else {
+                </ng-container>
+                <ng-template #noData>
                     <div class="text-center">Cargando libros...</div>
-                }
+                </ng-template>
             </div>
         </div>
     </div>
+    
+    
     <!-- fin de las targetas -->
     
     <!-- Seccion del footer de la web -->
