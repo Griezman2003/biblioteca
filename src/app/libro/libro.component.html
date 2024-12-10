@@ -31,10 +31,16 @@
                                     <div class="book-body">
                                         <h5 class="book-title">{{ libro.titulo }}</h5>
                                         <hr class="my-2">
-                                        <p class="book-author fw-bold text-black">Autor: {{ libro.autor }}</p>
+                                        <p class="book-author text-black">Autor: {{ libro.autor }}</p>
                                         <hr class="my-2">
                                         <p>
-                                            <a class="text-decoration-none" [href]="'http://localhost:3000' + libro.archivo_pdf" target="_blank">Leer Libro</a>
+                                            <a class="text-decoration-none" [href]="'http://localhost:3000' + libro.archivo_pdf" target="_blank">Leer Libro online</a>
+                                        </p>
+                                        <hr class="my-2">
+                                        <p class="book-author text-black"><a class="text-decoration-none" href="#" (click)="descargarLibro(libro)">Descargar</a></p>
+                                        <hr class="my-2">
+                                        <p class="book-author text-black">
+                                            <a class="text-decoration-none" href="#" (click)="abrirLibro(libro.id)">Leer sin conexión</a>
                                         </p>
                                     </div>
                                 </div>
@@ -48,8 +54,6 @@
             </div>
         </div>
     </div>
-    
-    
     <!-- fin de las targetas -->
     
     <!-- Seccion del footer de la web -->
