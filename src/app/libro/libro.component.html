@@ -24,7 +24,7 @@
                         @for (libro of libros; track libro.titulo) {
                             <div class="col-md-3 mb-4">
                                 <div class="card">
-                                    <a [routerLink]="['/libro-detalle', libro.titulo]">
+                                    <a>
                                         <img [src]="'http://localhost:3000' + libro.imagen_url" [alt]="libro.titulo" class="img-thumbnail" style="height: 370px; width: 500px;"
                                         (error)="imagenDefecto($event)">
                                     </a>
