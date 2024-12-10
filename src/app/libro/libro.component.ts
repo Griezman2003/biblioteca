@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Libro } from '../libro.model'; 
 import { JsonService } from '../service/json.service'; 
-import { RouterLink } from '@angular/router';
 import { HeaderComponent } from "../header/header.component";
 import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-libro',
-  imports: [RouterLink, HeaderComponent, NgIf, NgFor],
+  imports: [HeaderComponent, NgIf, NgFor],
   templateUrl: './libro.component.html',
   styleUrls: ['./libro.component.css']
 })
