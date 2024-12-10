@@ -26,4 +26,7 @@ export class LibroComponent implements OnInit {
       }
     });
   }
+  imagenDefecto(event: Event): void { 
+    (event.target as HTMLImageElement).src = 'assets/images/angular.png'; 
+  }
 }
